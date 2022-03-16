@@ -14,11 +14,11 @@ if (window.name != "popout") {
 	document.getElementById("copySeedText").innerHTML = "Seed: " + seed;
 	document.getElementById("resetBoardButton").addEventListener("click", resetBoard);
 	document.getElementById("newBoardButton").addEventListener("click", function() {
-		window.location.href = 'AM2R Bingo.html';
+		window.location.href = 'board.html';
 	});
 	document.getElementById("copySeedButton").addEventListener("click", copySeedToClipboard);
 	document.getElementById("loadSeedButton").addEventListener("click", function() {
-		window.location.href = 'AM2R Bingo.html?seed=' + document.getElementById('seedTextBox').value;
+		window.location.href = 'board.html?seed=' + document.getElementById('seedTextBox').value;
 	});
 	document.getElementById("cellShrinkButton").addEventListener("click", function() {
 		setCellSize(cellSize - 10);

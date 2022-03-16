@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>AM2R Bingo by Electrix</title>
+		<link rel="stylesheet" href="styles.css">
+		<script type="text/javascript" src="seedrandom.min.js" defer></script> <!-- seedrandom.min.js provided by davidbau (http://davidbau.com/archives/2010/01/30/random_seeds_coded_hints_and_quintillions.html#more )-->
+		<script type="text/javascript" src="objectives.js" defer></script>
+		<script type="text/javascript" src="script.js" defer></script>
+	</head>
+	
+	<body>
+		<div id="layout">
+			<table id="board">
+				<thead>
+					<th id="tableHeader" colspan="6"><h1>AM2R Bingo</h1></th>
+				</thead>
+				<tbody>
+					<tr><th>Diagonal 1</th><th>Column 1</th><th>Column 2</th><th>Column 3</th><th>Column 4</th><th>Column 5</th></tr>
+					<tr><th>Row A</th><td></td><td></td><td></td><td></td><td></td></tr>
+					<tr><th>Row B</th><td></td><td></td><td></td><td></td><td></td></tr>
+					<tr><th>Row C</th><td></td><td></td><td></td><td></td><td></td></tr>
+					<tr><th>Row D</th><td></td><td></td><td></td><td></td><td></td></tr>
+					<tr><th>Row E</th><td></td><td></td><td></td><td></td><td></td></tr>
+					<tr><th>Diagonal 2</th></tr>
+				</tbody>
+			</table>
+			
+			<div id="sidebar">
+				<a id="info"><b>Another Metroid 2 Remake Bingo</b><br>
+				To be played on 1.5 New Game+ Or Random Game+.<br>
+				- For "Fully explore" tiles, you do NOT need to explore the area's exterior, or any transport pipes.<br>
+				- For "Finish in" tiles, time ends when you lose control of Samus.<br>
+				- For "Finish in [room]" tiles, time ends as soon as you enter the room.<br>
+				Have fun!
+				</a>
+				
+				<div id="buttonHolder">
+					<button id="resetBoardButton" type="button">Reset Board</button>
+					<button id="newBoardButton" type="button">Generate New Board</button>
+					
+					<div id="copyRow">
+						<a id="copySeedText">Seed: ------</a>
+						<button id="copySeedButton" type="button">Copy</button>
+					</div>
+					
+					<div id="loadRow">
+						<input id="seedTextBox" type="text" maxlength="6">
+						<button id="loadSeedButton" type="button">Load Seed</button>
+					</div>
+					
+					<div id="boardSizeControls">
+						<a>Board Size:</a>
+						<button id="cellShrinkButton" type="button">-</button>
+						<button id="cellSizeButton" type="button">100%</button>
+						<button id="cellGrowButton" type="button">+</button>
+					</div>
+					
+					<button id="layoutButton" type="button">Change Layout</button>
+					<button id="popoutButton" type="button">Pop Out Board</button>
+				</div>
+			</div>
+		</div>
+		<p>version 1.0<br>by Electrix</p>
+	</body>
+</html>
